@@ -1,28 +1,23 @@
 package escola.cadastro;
 
-public class Avaliacao<T> {
+public class Avaliacao {
 
-    private T nota;
-    private Aluno aluno;
+    private double nota;
 
-    public Avaliacao(T nota, Aluno aluno) {
+    public Avaliacao(double nota) {
         this.nota = nota;
-        this.aluno = aluno;
     }
 
-    public T getNota() {
+    public double getNota() {
         return nota;
     }
 
-    public void setNota(T nota) {
+    public void setNota(double nota) {
         this.nota = nota;
     }
 
-    public Aluno getAluno() {
-        return aluno;
-    }
-
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
+    @Override
+    public String toString() {
+        return String.valueOf(nota);
     }
 }
